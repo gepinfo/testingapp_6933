@@ -33,6 +33,7 @@ const routes: Routes = [
 { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
 
 { path : 'datamodified', loadChildren: () => import('./datamodified/datamodified.module').then(m => m.DatamodifiedModule), canActivate: [AuthGuard] } , 
+{ path : 'testapp', loadChildren: () => import('./testapp/testapp.module').then(m => m.TestappModule), canActivate: [AuthGuard] } , 
 ];
 
 @NgModule({
